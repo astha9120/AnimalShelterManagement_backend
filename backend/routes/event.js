@@ -20,7 +20,7 @@ var upload = multer({ storage: storage });
 const getEvent = async(req,res)=>{
     try {
         const events = await Event.find({});
-        console.log(events)
+        console.log("events")
         res.status(200)
         res.send(events)
     } catch (error) {
